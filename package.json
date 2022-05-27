@@ -1,0 +1,18 @@
+{
+    "name": "random-python",
+    "author": "marzeq",
+    "version": "1.0.0",
+    "types": "dist/index.d.ts",
+    "main": "dist/index.js",
+    "description": "A port of the Python random module to JavaScript",
+    "dependencies": {
+        "range-python": "^1.0.2"
+    },
+    "devDependencies": {
+        "rimraf": "^3.0.2",
+        "typescript": "^4.5.4"
+    },
+    "scripts": {
+        "prepublish": "rimraf dist/ && tsc"
+    }
+}
